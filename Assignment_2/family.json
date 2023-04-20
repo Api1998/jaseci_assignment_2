@@ -16,8 +16,9 @@
         "name":"Sunil Wijethunga",
         "Date_of_birth":"1995-01-1",
         "profession": "Electrical Engineer",
-	"hobby" : {"Reading books",
-		   "Playing cricket" },
+	    "hobby" : [
+            "Reading books",
+		    "Playing cricket" ],
         "parents":{
             "father":"0x2",
             "mother":"0x3"
@@ -33,8 +34,8 @@
         "name":"Martin Saman",
         "Date_of_birth":"1965-01-1",
         "profession": "Mechanical Engineer",
-	"hobby" : {"Reading news papers", 
-		  "Travelling"},
+	    "hobby" : ["Reading news papers", 
+		  "Travelling"],
         "parents":null,
         "deceased": false,
         "children":[
@@ -51,8 +52,8 @@
         "name":"Mari Samanmali",
         "Date_of_birth":"1965-05-1",
         "profession": "Doctor",
-	"hobby" : {"Cooking new food",
-		"Travelling"},
+	    "hobby" : ["Cooking new food",
+		    "Travelling"],
         "parents":null,
         "deceased": false,
         "children":[
@@ -69,8 +70,8 @@
         "name":"Kamala Wijethunga",
         "Date_of_birth":"1998-06-1",
         "profession": "Teacher",
-	"hobby" : {"Playing badminton",
-		  "Watching movies"},
+	    "hobby" : ["Playing badminton",
+		    "Watching movies"],
         "parents":{
             "father":"0x2",
             "mother":"0x3"
@@ -86,8 +87,8 @@
         "name":"Anil Wijethunga",
         "Date_of_birth":"2000-01-1",
         "profession": "Undergraduate",
-	"hobby" : {"Playing cricket",
-		"Playing badminton"},
+	    "hobby" : ["Playing cricket",
+		    "Playing badminton"],
         "parents":{
             "father":"0x2",
             "mother":"0x3"
