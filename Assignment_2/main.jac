@@ -79,10 +79,9 @@ walker find_coming_birthday {
 walker destroy_family_tree{
     root {
 
-    for i in -[daughter]->: destroy i;
     for i in -[married]->: destroy i;
     for i in -[generic]->: destroy i;
-    for i in -[son]->: destroy i;
+    for i in -[child]->: destroy i;
     take -->;
     }
     
