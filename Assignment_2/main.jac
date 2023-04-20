@@ -1,4 +1,4 @@
-import {*} with "./graph.jac";
+pip install import {*} with "./graph.jac";
 
 walker create_familytree {
     // creates a familytree from a json file
