@@ -1,8 +1,10 @@
-pip install import {*} with "./graph.jac";
+
+
+import {*} with "./graph.jac";
 
 walker create_familytree {
     // creates a familytree from a json file
-    has data_file = "familytree.json";
+    has data_file = "family.json";
     has famly_members = [];
 
     root {
@@ -36,7 +38,10 @@ walker create_familytree {
                 deceased = member["deceased"],
                 parents = member["parents"],
                 children = member["children"],
-                spouse = member["spouse"]
+                spouse = member["spouse"],
+                BMI = member["BMI"],
+                height = member["height"],
+                weight = member["weight"]
             );
             famly_members.list::append(family_member);
         }
@@ -60,21 +65,54 @@ walker find_coming_birthday {
     has max_return = 5;
     has anchor birthday_order = [];
 
+
     root: take-->node::family_root;
     family_root: take-->node::person;
     person {
-        if (!here.deceased) {
+        if (true) {
             here::get_days_to_birthday;
             here::get_age;
-            birthday_order.l::append([here.days_to_birthday, here.age, here.name]);
+            birthday_order.list::append([here.days_to_birthday, here.age, here.name]);
+
         }
     }
     with exit {
         birthday_order = std.sort_by_col(birthday_order, 0);
         birthday_order = birthday_order[0:max_return];
         std.out(birthday_order);
-        report birthday_order;
+        // report birthday_order;
+        }
+
+}
+   
+walker find_BMI {
+    // returns the upcoming birthdays of the family
+    has anchor BMI_List = [];
+    has anchor BMI_test = [];
+
+
+    root: take-->node::family_root;
+    family_root: take-->node::person;
+    person {
+        if (true) {
+            here::get_BMI;
+            BMI_List.list::append(here.BMI);
+
+            if (here.BMI > 25){
+                BMI_test.list::append(" ".str::join([here.name," you are in over weight"]));
+            }
+            if (here.BMI > 18.5 and here.BMI <25){
+                BMI_test.list::append(" ".str::join([here.name," you are in normal weight"]));
+            }
+            if (here.BMI <18.5){
+                BMI_test.list::append(" ".str::join([here.name," you are in under weight"]));
+            }
+        }
     }
+    with exit {
+        std.out(BMI_test);
+        report BMI_test;
+        }
 }
 walker destroy_family_tree{
     root {
