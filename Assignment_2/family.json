@@ -16,7 +16,7 @@
         "name":"Sunil Wijethunga",
         "Date_of_birth":"1995-01-1",
         "profession": "Electrical Engineer",
-	      "hobby" : "Reading books",
+	     "hobby" : {"Reading books",
         "parents":{
             "father":"0x2",
             "mother":"0x3"
