@@ -1,0 +1,18 @@
+2023-04-20 20:27:42,907 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+2023-04-20 20:28:33,236 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7f5258c02e30>
+2023-04-20 20:28:33,238 - ERROR - compile_jac: main.jac: Invalid syntax in Jac code!
+2023-04-20 20:28:33,239 - ERROR - compile_jac: main.jac: line 1:0 - unparsed:main.jac:0:0: - mismatched input 'pip' expecting {<EOF>, 'version', 'type', 'graph', 'node', 'import', 'edge', 'walker', 'async', 'test', 'global'}
+2023-04-20 20:28:33,241 - ERROR - register: main.jac: Code not registered
+2023-04-20 20:29:13,379 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7f525886a350>
+2023-04-20 20:29:13,392 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7f5258aa8e20>
+2023-04-20 20:29:13,392 - ERROR - compile_jac: main.jac: Invalid syntax in Jac code!
+2023-04-20 20:29:13,392 - ERROR - compile_jac: main.jac: line 87:0 - unparsed:main.jac:0:0: - missing '}' at 'walker'
+2023-04-20 20:29:13,392 - ERROR - compile_jac: graph.jac: line 50:0 - unparsed:graph.jac:0:0: - extraneous input '}' expecting {<EOF>, 'type', 'graph', 'node', 'edge', 'walker', 'async', 'test', 'global'}
+2023-04-20 20:29:13,392 - ERROR - register: main.jac: Code not registered
+2023-04-20 20:29:20,427 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7f525884bac0>
+2023-04-20 20:29:20,438 - ERROR - jac_code_to_ast: Parse errors encountered - <jaseci.jac.ir.ast_builder.JacAstBuilder object at 0x7f525884ae90>
+2023-04-20 20:29:20,438 - ERROR - compile_jac: main.jac: Invalid syntax in Jac code!
+2023-04-20 20:29:20,438 - ERROR - compile_jac: main.jac: line 87:0 - unparsed:main.jac:0:0: - missing '}' at 'walker'
+2023-04-20 20:29:20,439 - ERROR - compile_jac: graph.jac: line 50:0 - unparsed:graph.jac:0:0: - extraneous input '}' expecting {<EOF>, 'type', 'graph', 'node', 'edge', 'walker', 'async', 'test', 'global'}
+2023-04-20 20:29:20,439 - ERROR - register: main.jac: Code not registered
