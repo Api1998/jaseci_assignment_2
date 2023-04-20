@@ -1,0 +1,96 @@
+{
+    "families":[
+        {
+            "family_name":"Wijethunga Mudiyanselage",
+            "uid":"0x1"
+        },
+        {
+            "family_name":"Rajapaksha Arachchige",
+            "uid":"0x2"
+        }
+    ],
+    "memebers":[
+       {
+        "uid":"0x1",
+        "family_id":"0x1",
+        "name":"Sunil Wijethunga",
+        "Date_of_birth":"1995-01-1",
+        "profession": "Electrical Engineer",
+	      "hobby" : "Reading books",
+        "parents":{
+            "father":"0x2",
+            "mother":"0x3"
+        },
+        "deceased": false,
+        "children":[],
+        "spouse":null,
+        "gender":"male"
+       } ,
+       {
+        "uid":"0x2",
+        "family_id":"0x1",
+        "name":"Martin Saman",
+        "Date_of_birth":"1965-01-1",
+        "profession": "Mechanical Engineer",
+	      "hobby" : "Reading news papers",
+        "parents":null,
+        "deceased": false,
+        "children":[
+            "0x1",
+            "0x4",
+            "0x5"
+        ],
+        "spouse":"0x3",
+        "gender":"male"
+       },
+        {
+        "uid":"0x3",
+        "family_id":"0x2",
+        "name":"Mari Samanmali",
+        "Date_of_birth":"1965-05-1",
+        "profession": "Doctor",
+	      "hobby" : "Cooking new food",
+        "parents":null,
+        "deceased": false,
+        "children":[
+            "0x1",
+            "0x4",
+            "0x5"
+        ],
+        "spouse":"0x2",
+        "gender":"female"
+    },
+    {
+        "uid":"0x4",
+        "family_id":"0x1",
+        "name":"Kamala Wijethunga",
+        "Date_of_birth":"1998-06-1",
+        "profession": "Teacher",
+	      "hobby" : "Playing badminton",
+        "parents":{
+            "father":"0x2",
+            "mother":"0x3"
+        },
+        "deceased": false,
+        "children":[],
+        "spouse":null,
+        "gender":"Female"
+    },
+    {
+        "uid":"0x5",
+        "family_id":"0x1",
+        "name":"Anil Wijethunga",
+        "Date_of_birth":"2000-01-1",
+        "profession": "Undergraduate",
+	      "hobby" : "Playing cricket",
+        "parents":{
+            "father":"0x2",
+            "mother":"0x3"
+        },
+        "deceased": false,
+        "children":[],
+        "spouse":null,
+        "gender":"male"
+    }
+    ]
+}
