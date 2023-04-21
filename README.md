@@ -8,7 +8,7 @@
 180613G - M.Sobikanth 
 
 University - university of moratuwa
-Departmenet - Electrical Department
+Department - Electrical Department
 Batch - 18
 
 # Demonstration video
