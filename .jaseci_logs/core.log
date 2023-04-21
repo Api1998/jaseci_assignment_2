@@ -1,0 +1,2 @@
+2023-04-21 07:04:43,378 - ERROR - start: Skipping RedisService due to initialization failure!
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.

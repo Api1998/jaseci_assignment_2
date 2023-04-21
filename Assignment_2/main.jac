@@ -85,33 +85,41 @@ walker find_coming_birthday {
 
 }
    
-walker find_BMI {
-    // returns the upcoming birthdays of the family
-    has anchor BMI_List = [];
-    has anchor BMI_test = [];
+
+
+walker find_BMI_prime {
+    // returns the healthy condition of the family members
+    has anchor BMI_prime_List = [];
+    has anchor BMI_prime_test = [];
 
 
     root: take-->node::family_root;
     family_root: take-->node::person;
     person {
         if (true) {
-            here::get_BMI;
-            BMI_List.list::append(here.BMI);
+            here::get_BMI_Prime;
+            BMI_prime_List.list::append(here.BMI_Prime);
 
-            if (here.BMI > 25){
-                BMI_test.list::append(" ".str::join([here.name," you are in over weight"]));
+            if (here.BMI_Prime < 0.74){
+                BMI_prime_test.list::append(" ".str::join([here.name," you are in under weight."]));
             }
-            if (here.BMI > 18.5 and here.BMI <25){
-                BMI_test.list::append(" ".str::join([here.name," you are in normal weight"]));
+            if (here.BMI_Prime > 0.74 and here.BMI_Prime < 1){
+                BMI_prime_test.list::append(" ".str::join([here.name," you are in normal weight."]));
             }
-            if (here.BMI <18.5){
-                BMI_test.list::append(" ".str::join([here.name," you are in under weight"]));
+            if (here.BMI_Prime > 1 and here.BMI_Prime <1.2){
+                BMI_prime_test.list::append(" ".str::join([here.name," you are in over weight. Risky!"]));
             }
+
+            if (here.BMI_Prime > 1.2){
+                BMI_prime_test.list::append(" ".str::join([here.name," you are in obese weight class. Highly Risky!!!"]));
+            }
+
+
         }
     }
     with exit {
-        std.out(BMI_test);
-        report BMI_test;
+        std.out(BMI_prime_test);
+        report BMI_prime_test;
         }
 }
 

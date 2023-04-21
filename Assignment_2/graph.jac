@@ -15,9 +15,10 @@ node person {
     has spouse;
     has age;
     has days_to_birthday;
-    has BMI;
+    //has BMI;
     has height;
     has weight;
+    has BMI_Prime;
 
 
 
@@ -38,9 +39,17 @@ node person {
         if (difference < 0) : difference = difference + 365;
         days_to_birthday = difference;
     }
-    can get_BMI{
-        BMI=weight/((height/100)^2);
+
+    // can get_BMI{
+    //     BMI=weight/((height/100)^2);
+    // }
+
+
+    can get_BMI_Prime{     
+        BMI_Prime=weight/(25*(height/100)^2);
     }
+
+
 }
 node family_root{
     has id;
