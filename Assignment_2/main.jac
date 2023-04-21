@@ -114,6 +114,33 @@ walker find_BMI {
         report BMI_test;
         }
 }
+
+walker find_people_with_similar_hobbies{
+    // return the similarity in hobbies of the family
+    has data_file = "family.json";
+
+    root: take-->node::family_root;
+    family_root: take-->node::person;
+    person {
+        members_list = file.load_json(data_file)["members"];
+        hobby_list_a = here.hobbies;
+        similar_hobby_members =[];
+        member_id = here.id;
+        for member_a in members_list{
+            if (member_a["uid"] == member_id): continue;
+            hobby_list_b = member_a["hobby"];
+            for hobby in hobby_list_a{
+                if (hobby in hobby_list_b){
+                    if (member_a["name"] in similar_hobby_members): continue;
+                    similar_hobby_members.l::append(member_a["name"]);
+                }
+            } 
+        }
+        std.out(similar_hobby_members);
+        report similar_hobby_members;
+        
+    }
+}
 walker destroy_family_tree{
     root {
 
