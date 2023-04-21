@@ -39,9 +39,9 @@ walker create_familytree {
                 parents = member["parents"],
                 children = member["children"],
                 spouse = member["spouse"],
-                BMI = member["BMI"],
                 height = member["height"],
-                weight = member["weight"]
+                weight = member["weight"],
+                hobbies = member["hobby"] 
             );
             famly_members.list::append(family_member);
         }
@@ -80,7 +80,7 @@ walker find_coming_birthday {
         birthday_order = std.sort_by_col(birthday_order, 0);
         birthday_order = birthday_order[0:max_return];
         std.out(birthday_order);
-        // report birthday_order;
+        report birthday_order;
         }
 
 }

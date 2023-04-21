@@ -19,6 +19,7 @@ node person {
     has height;
     has weight;
     has BMI_Prime;
+    has hobbies;
 
 
 
