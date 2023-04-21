@@ -1,1 +1,2 @@
-jaseci version - Jaseci.Studio_1.4.0
+jaseci version - Jaseci.Studio_1.4.0.13
+jaseci serv - 1.4.0.16
