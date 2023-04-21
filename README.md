@@ -1,8 +1,25 @@
 # jaseci_assignment_2
 
-#walker destory_family_tree : that function is to destroy the previous designs of previous project
+# Group_members_list
+180037T - T.Apisaruthan
+180055V - B.A.D.S .Bamunusinghe
+180170T - Fernando D.J.T
+180539J - T.S.Rathnayake
+180613G - M.Sobikanth
 
-# BMI_Prime_Feature: 
+University - university of moratuwa
+Departmenet - Electrical Department
+Batch - 18
+
+The below features are newly added to the existing ancestry example
+# walker - destory_family_tree :
+This function is used to destroy the previous designs of previous project
+
+# walker - BMI_Prime_Feature: 
 BMI prime (BMI') is a modification of the traditional Body Mass Index (BMI) calculation that adjusts for differences in body composition between individuals. BMI prime can be a useful tool for assessing an individual's risk for health problems related to obesity, such as diabetes, heart disease, and high blood pressure.
 
 This added Feature helps to identify the healthy persons from the family.
+
+# walker - find_people_with_similar_hobbies:
+This feature will go through each person and find who are the people that have similar hobbies as that person
+And reports it to the terminal 
