@@ -1,11 +1,11 @@
 # jaseci_assignment_2
 
-# Group_members_list
+# Group_members_details
 180037T - T.Apisaruthan
 180055V - B.A.D.S .Bamunusinghe
 180170T - Fernando D.J.T
 180539J - T.S.Rathnayake
-180613G - M.Sobikanth
+180613G - M.Sobikanth 
 
 University - university of moratuwa
 Departmenet - Electrical Department
